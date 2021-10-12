@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  root to: "photos#index"
+  get 'comments/new'
+  devise_for :users
+  root to: 'photos#index'
+  resources :photos do
+    resources :comments, only:[:new, :create, :destroy]
+  end
+  resources :users
 end

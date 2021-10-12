@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+header{
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title2{
+  margin: 100px;
+  width: 50%;
+}
+
+.title-img{
+  width: 300px;
+  height: 80px;
+}
+
+
+
+.nav_bar2{
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+}
+
+.button{
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 1rem;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 18px 32px;
+  border-width: thick;
+  border-style: solid;
+}
+
+.button:hover{
+  background: #ffdf1f;
+}
+

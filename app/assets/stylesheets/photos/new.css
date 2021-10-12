@@ -1,0 +1,66 @@
+.photo{
+  height: calc(100vh - 150px);
+  display: flex;
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.content-photo{
+  margin-top: 30px;
+}
+
+.content-p{
+  text-align: center;
+  font-size: 25px;
+}
+
+.content-title{
+  margin-top: 30px;
+}
+
+.indispensable{
+  font-size: 15px;
+  margin-right: 20px;
+  color: red;
+}
+
+.content-category{
+  margin-top: 30px;
+}
+
+.image{
+  margin-top: 20px;
+}
+
+.select-box{
+}
+
+.content-post{
+  margin-top: 50px;
+}
+
+.submit-btn{
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 1rem;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 18px 32px;
+  border-width: thick;
+  border-style: solid;
+}
+
+.submit-btn:hover{
+  background: #ffdf1f;
+}
+
+.submit-field{
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 18px 32px;
+  border-width: thick;
+  border-style: solid;
+  margin-right: 30px;
+}

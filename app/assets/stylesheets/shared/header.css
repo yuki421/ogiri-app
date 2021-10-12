@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title{
+  width: 30%;
+  margin: 100px;
+}
+
+.title-img{
+  width: 300px;
+  height: 180px;
+}
+
+.main-title{
+  width: 40%;
+  text-align: center;
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 20px;
+  margin-right: 200px;
+}
+
+.nav_bar{
+  width: 30%;
+}
+
+.user_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button{
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 1rem;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 18px 32px;
+  border-width: thick;
+  border-style: solid;
+}
+
+.button:hover{
+  background: #ffdf1f;
+}
+

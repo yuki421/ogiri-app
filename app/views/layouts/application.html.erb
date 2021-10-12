@@ -4,38 +4,17 @@
     <title>OGiri</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <header>
-
-   <div class = "heading">
-    <h1 class = "title">大喜利</h1>
-   </div>
-
-   <div class = "nav_name">
-     <%= "ニックネーム" %>
-   </div>
-
-   <div class = "nav_bar">
-    <ul>
-     <li class = "user_nav">
-      <%= link_to "ログイン" %>
-      <%= link_to "新規登録" %>
-     </li>
-    </ul>
-   </div>
-
-  </header>
 
   <body>
     <%= yield %>
   </body>
 
-  <footer>
-    <h2>Copyright O-giri 2021.</h2>
-  </footer>
 </html>
 
