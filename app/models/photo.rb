@@ -1,7 +1,8 @@
 class Photo < ApplicationRecord
   has_one_attached :image
   belongs_to :user
-  has_many :comments
+  has_many :comments, dependent: :destroy
+ 
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
@@ -11,5 +12,7 @@ class Photo < ApplicationRecord
     validates :image
     validates :category_id , numericality: { other_than: 0 }
   end
+
+  
 
 end

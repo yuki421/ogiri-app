@@ -12,6 +12,8 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6 }, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
   end
   
-  has_many :photos
-  has_many :comments
+  has_many :photos, dependent: :destroy
+  has_many :comments, dependent: :destroy
+
+
 end

@@ -47,10 +47,11 @@
         <p class="comment-user"><%= comment.user.nickname %></p>
       </div>
       <div class="delete-area">
-      <% if user_signed_in? && current_user.id %>
-        <%= link_to "削除", photo_comment_path(comment.photo_id, comment.id), method: :delete, class:"comment-delete-btn", id:"comment-delete-btn" %>
-      <% end %>
+        <% if user_signed_in? && current_user.id %>
+          <%= link_to "削除", photo_comment_path(comment.photo_id, comment.id), method: :delete, class:"comment-delete-btn", id:"comment-delete-btn" %>
+        <% end %>
       </div>
+      
     <% end %>
  </div>
 </div>

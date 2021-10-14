@@ -22,7 +22,6 @@ class PhotosController < ApplicationController
 
   def show
     @comment = Comment.new
-    # logger.debug(:user)
     @comments = @photo.comments.includes(:user)
   end
 
