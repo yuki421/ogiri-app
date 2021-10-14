@@ -1,0 +1,10 @@
+<header>
+  <h1 class="header-title2">
+      <a href="/" ><img src="/title2.PNG", class="title-img", alt="" ></a>
+  </h1>
+  <% if user_signed_in?%>
+   <div class ="nav_bar2">
+     <%= link_to current_user.nickname, "#", class:"button" %>
+   </div>
+  <% end %>
+</header>

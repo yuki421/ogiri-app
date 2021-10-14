@@ -1,0 +1,42 @@
+<%= render "shared/second_header" %>
+
+<div class="post_photo">
+ <div class="main-categorys"> 
+  <h2 class="main-menu">menu</h2>
+  <ul class="main-category">
+  <li>category</li>
+  <li>runkking</li>
+  </ul>
+ </div>
+
+   <div class="photo">
+    <%= form_with model: @photo, local: true do |f| %>
+      <%= render "shared/error", model: f.object %>
+
+      <div class="content-photo">
+        <p class="content-p">お題と画像を投稿するんや！</p>
+        <div class="image">
+        <span class="indispensable">※必須</span>
+        <p>クッリクしてダウンロード</p>
+        <%= f.file_field :image, class:"new_image",id: "new_image" %>
+        </div>
+      </div>
+      <div class="content-title">
+        <span class="indispensable">※必須</span>
+        <%= f.label :title, "お題" %><br>
+        <%= f.text_area :title %>
+      </div>
+      <div class="content-category">
+        <span class="indispensable">※必須</span>
+        <%= f.label :category_id, "お題のカテゴリー" %><br>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, { selected: 0 } ,{class: "select-box", id: "item-category"}) %>
+      </div>
+      <div class="content-post">
+        <%= f.submit "投稿" ,class:"submit-btn"%>
+      </div>
+    <% end %>
+   </div>
+</div>
+
+<%= render "shared/footer" %>
+

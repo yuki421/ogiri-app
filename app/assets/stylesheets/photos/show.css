@@ -1,0 +1,88 @@
+.show-content{
+  height: calc(100% - 150px);
+  display: flex;
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.show-title, .show-nickname{
+  text-align: center;
+  margin: 50px 30px;
+}
+
+.show-img{
+  width: 50vh;
+  height: 50vh;
+}
+
+.show-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.show-edit-btn, .show-delete-btn{
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 1rem;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 18px 32px;
+  border-width: thick;
+  border-style: solid;
+}
+
+.show-edit-btn:hover, .show-delete-btn:hover{
+  background: #ffdf1f;
+}
+
+.show-comments{
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-comment{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.list-comment{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.comments{
+  margin-top: 100px;
+  
+}
+
+.comment-area{
+  margin: 40px 0;
+  font-family: 'Kaisei HarunoUmi', serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment{
+ font-size: 25px;
+ text-align: center;
+}
+
+.comment-user{
+  text-align: right;
+  margin-right: 100px;
+}
+
+.delete-area{
+  text-align: right;
+}
+
+.comment-delete-btn{
+  margin-right: 100px;
+}

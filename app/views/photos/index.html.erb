@@ -1,0 +1,53 @@
+<%= render "shared/header" %>
+
+<div class="main-content", id="main-content">
+   <div class="main-categorys"> 
+    <h2 class="main-menu">menu</h2>
+    <ul class="main-category">
+     <li>category</li>
+     <li>runkking</li>
+    </ul>
+   </div>
+
+   <div class="main-discription">
+     <p>ええか？</p>
+     <p>まずはフォルダに眠ってる写真を</p>
+     <p>お題と一緒に投稿するんや！</p>
+   </div>
+
+   <div class="main-post">
+     <%= link_to "お題を投稿する", new_photo_path, class: "new_post", id: "new_post" %>
+   </div>
+
+   <div class="main-discription">
+     <p>そしたら次は、大喜利するんや！</p>
+     <p>どこかの誰かのフォルダに眠ってた写真、</p>
+     <p>あんたの手ェで成仏させたってや〜</p>
+     <p>写真をクリックして今すぐコメントや！</p>
+   </div>
+   
+   <div class="photo-content">
+     <div class="photo-content-title">ボケにいく</div>
+     <ul class="photo-lists">
+       <% @photos.each do |photo| %> 
+        <%= link_to photo_path(photo.id) do%>
+         <li class="photo-list">
+           <div class="photo-img-content">
+             <%= image_tag photo.image, class: "photo-img" %>
+           </div>
+           <div class="photo-nickname">
+             <%= photo.user.nickname %>
+           </div>
+           <div class="photo-title">
+             <%= photo.title %>
+           </div>
+         </li>
+        <% end %>
+       <% end %>
+     </ul>
+   </div>
+</div>
+
+<%= render "shared/footer" %>
+
+

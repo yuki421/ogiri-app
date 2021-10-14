@@ -1,0 +1,27 @@
+<header>
+
+    <h1 class="header-title">
+      <img src="/title2.PNG", class="title-img" >
+    </h1>
+
+    <div class="main-title">
+    <p>おしゃれな写真は撮られへん</p>
+    <p>でも、フォルダに写真はいっぱいあんねん</p>
+    <p>日の目を見てないその写真……</p>
+    <p>笑って成仏させてあげましょうや</p>
+   </div>
+   
+   <div class ="nav_bar">
+    <ul class ="user_nav">
+      <% if user_signed_in?%>
+        <li><%= link_to current_user.nickname, "#",class:"button" %></li>
+        <li><%= link_to "ログアウト",destroy_user_session_path, method: :delete, class: "button" %></li>
+      <% else %>
+        <li><%= link_to "ログイン", new_user_session_path, class: "button" %></li>
+        <li><%= link_to "新規登録", new_user_registration_path, class: "button" %></li>
+      <% end %>
+    </ul>
+   </div>
+
+   
+</header>
